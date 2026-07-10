@@ -1,15 +1,26 @@
 # CodeDNA
 
-CodeDNA is a lightweight Python toolkit that analyzes source code and generates a structural fingerprint (DNA) of a software project.
+CodeDNA is a Python toolkit that creates a structural DNA profile for software projects.
+
+It analyzes source code and generates measurable insights about project structure, quality, and identity.
 
 ## Features
 
-- Analyze Python projects
-- Count files, classes and functions
-- Generate project fingerprint
-- Compute quality metrics
-- Export JSON reports
+- Python project analysis
+- File and code statistics
+- Function and class detection
+- Structural fingerprint generation
+- Code health scoring
+- Quality issue detection
+- JSON reporting
 
-## Status
+## Example
 
-🚧 Under active development.
+```python
+from codedna.analyzer import ProjectAnalyzer
+
+analyzer = ProjectAnalyzer("./my_project")
+
+result = analyzer.analyze()
+
+print(result)
